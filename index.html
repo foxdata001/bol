@@ -196,14 +196,14 @@
     }
 
     function adjustSpeedByScore() {
-      if(score >= 41) {
-        ball.speed = 4.5;
+      if(score >= 50) {
+        ball.speed = 5.5;
       } else if(score >= 40) {
-        ball.speed = 3.5;
+        ball.speed = 4.5;
       } else if(score >= 20) {
-        ball.speed = 2.5;
+        ball.speed = 3.5;
       } else {
-        ball.speed = 1.5;
+        ball.speed = 2;
       }
 
       ball.dx = (ball.dx > 0 ? 1 : -1) * ball.speed;
@@ -374,7 +374,7 @@
 
     function startGame() {
       score = 0;
-      ball.speed = 1.5;
+      ball.speed = 2;
       ball.dx = ball.speed;
       ball.dy = ball.speed;
       ball.color = 'cyan';
